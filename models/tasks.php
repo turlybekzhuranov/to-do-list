@@ -1,4 +1,13 @@
 <?php
     require 'config/db.php';
 
-    $tasks = $pdo->query('SELECT * FROM `tasks` ORDER BY `id` DESC');
+    require 'models/sort.php';
+
+
+    if (!in_array($key, $key_array)) {
+        echo 'Неверный формат запроса<br>';
+        echo '<a href="/">Главная страница</a>';
+        exit();
+    }
+
+    $tasks = $pdo->query('SELECT * FROM `tasks` ORDER BY ' . $key . ' ' . $sort);
