@@ -1,3 +1,11 @@
+
+
+<?php
+    require 'config/db.php';
+
+    require 'views/showtasks.php';
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,10 +18,4 @@
 
 </body>
 </html>
-
-
-<?php
-    require 'config/db.php';
-
-    require 'views/showtasks.php';
 

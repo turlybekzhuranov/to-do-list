@@ -1,21 +1,24 @@
 <?php
-    $key_array = array('id','name','email','text','status');
-    $sort_array = array('asc','desc');
+    $orderByArray = array('id','name','email','text','status');
+    $sortArray = array('asc','desc');
 
-    $key = "id";
-    $sort = "asc";
-    if ( isset($_GET['key']) )
+    $orderBy = 'id';
+    $sort = 'desc';
+
+    if ( isset($_GET['order_by']) )
     {
-        $key=$_GET['key'];
+        $orderBy=$_GET['order_by'];
         $sort=$_GET['sort'];
     }
 
-    if($sort=='asc')
-    {
-        $sort='desc';
-    }
-    else
-    {
-        $sort='asc';
-
+    function getSortURL($orderBy){
+        $sortURL = "&order_by=".$orderBy."&sort=";
+        $sortType = "asc";
+        if( isset($_GET['order_by']) && $_GET['order_by'] == $orderBy ){
+            if( isset($_GET['sort']) && $_GET['sort'] == "asc" ){
+                $sortType = "desc";
+            }
+        }
+        $sortURL .= $sortType;
+        return $sortURL;
     }
