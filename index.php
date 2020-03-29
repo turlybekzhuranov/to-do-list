@@ -8,12 +8,7 @@
 </head>
 <body style="background-color: #EFF0F3">
 <?php
-    require 'config/db.php';
-
-    require 'views/showTasks.php';
-
-    require 'views/showAddingTaskForm.php';
-
+    require 'controllers/tasksController.php';
 
 ?>
 </body>

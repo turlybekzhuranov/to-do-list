@@ -1,6 +1,4 @@
 <?php
-    require 'models/tasks.php';
-
     echo '<div class="container" style="margin-top: 50px;">';
         echo '<div class="row">';
             echo '<table class="table table-bordered table-striped table-hover table-sm">';

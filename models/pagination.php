@@ -1,5 +1,4 @@
 <?php
-    require 'config/db.php';
 
     $perPage = 3;
     $page = 1;
