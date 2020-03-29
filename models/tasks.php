@@ -3,6 +3,7 @@
 
     require 'models/pagination.php';
     require 'models/sort.php';
+    require 'models/addTask.php';
 
 
 
