@@ -1,3 +1,6 @@
+<?php
+require 'controllers/controller.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,10 +10,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body style="background-color: #EFF0F3">
-<?php
-    require 'controllers/tasksController.php';
 
-?>
 </body>
 </html>
 

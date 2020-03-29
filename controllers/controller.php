@@ -1,4 +1,6 @@
 <?php
+    ob_start();
+    session_start();
     require 'config/db.php';
 
     require 'models/addTask.php';
@@ -6,6 +8,8 @@
     require 'models/sort.php';
     require 'models/tasks.php';
 
-    require 'views/showTasks.php';
+    require 'models/login.php';
+    require  'views/loginButton.php';
 
+    require 'views/showTasks.php';
     require 'views/showAddingTaskForm.php';
