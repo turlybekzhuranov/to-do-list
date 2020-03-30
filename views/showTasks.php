@@ -18,7 +18,7 @@
                         if ( $_SESSION['login'] == 'admin' ){
                             echo '<td>';
                             echo '<form action="/?id=' . $task->id . '" method="post">
-                                    <input type="text" style="width: 70%; height: 50px" name="inputText" value="' . $task->text . '">
+                                    <textarea type="text" style="width: 70%; height: 50px" name="inputText">' . $task->text . '</textarea>
                                     <input type="submit" class="btn btn-success float-right" name="saveText" value="Сохранить">
                                    </form>';
                             echo '</td>';
