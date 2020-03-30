@@ -1,9 +1,9 @@
 <?php
 
-    $name = $_POST['name'];
+    $name =  strip_tags($_POST['name']);
     $email = $_POST['email'];
-    $text = $_POST['text'];
-    $status = 'Не выполнено';
+    $text = strip_tags($_POST['text']);
+    $status = 'Не выполнено.';
 
 if ( isset($_POST['addTask']) ) {
     $sql = "INSERT INTO `tasks` (`name`, `email`, `text`, `status`) VALUES (?, ?, ?, ?)";

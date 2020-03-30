@@ -6,7 +6,8 @@
     $editedText = $_POST['inputText'];
     if ( isset($_POST['saveText']) ){
         $status = $pdo->query('SELECT `status` FROM `tasks` WHERE `id`=' . $id)->fetchColumn();
-        if ( strpos($status, 'Отредактировано администратором') !== false ) {
+        echo $status;
+        if ( strpos($status, 'Отредактировано администратором') === false ) {
             $status .= ".\nОтредактировано администратором";
         }
 
