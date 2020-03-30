@@ -11,17 +11,17 @@
             <div class="form-group">
                 <div class="form-row">
                     <div class="col-md-6">
-                        <input class="form-control" type="text" name="name" placeholder="Name" required>
+                        <input class="form-control" type="text" name="name" placeholder="Ваше Имя" required>
                     </div>
                     <div class="col-md-6">
-                        <input class="form-control" type="email" name="email" placeholder="Email" required>
+                        <input class="form-control" type="email" name="email" placeholder="Ваш Email" required>
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-row">
                     <div class="col-md-12">
-                        <textarea class="form-control" name="text" placeholder="Task text ..." required></textarea>
+                        <textarea class="form-control" name="text" placeholder="Текст задачи ..." required></textarea>
                     </div>
                 </div>
             </div>

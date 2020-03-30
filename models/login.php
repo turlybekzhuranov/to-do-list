@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $incorrectInfo = '';
     if ( isset($_POST['login']) ) {
         $login = $_POST['userName'];
         $password = $_POST['password'];
@@ -9,6 +10,6 @@
             exit();
         }
         else {
-            echo "Incorrect login or password. Try again";
+            $incorrectInfo = 'Неправильный логин или пароль. Повторите снова';
         }
     }

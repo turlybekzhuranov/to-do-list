@@ -12,6 +12,7 @@
     require 'models/login.php';
 
 
-    require  'views/loginButton.php';
+    require 'views/header.php';
     require 'views/showTasks.php';
     require 'views/showAddingTaskForm.php';
+    require 'views/footer.php';
